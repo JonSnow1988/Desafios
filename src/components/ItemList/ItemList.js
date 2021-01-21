@@ -1,15 +1,18 @@
-import React from 'react'
+
+import React, { Fragment } from 'react'
 import Item from '../Item/Item'
 
 const ItemList = ({items}) => {
     return (
-
-        <Fragment>
+        <Fragment>  
+            <div>
         
-        {items && items.map(e => <Item key={e.id} item={e}>)
+        {items && items.map(e => <Item key={e.id} item={e}/>)}
             
-        </Fragment>
+        </div>
     )
-}
-
-export default ItemList
+    </Fragment>
+      
+    )
+    }
+export default ItemList;
